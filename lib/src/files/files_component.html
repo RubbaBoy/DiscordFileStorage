@@ -1,0 +1,28 @@
+<div>
+  <div class="file-inner uk-flex uk-flex-wrap uk-flex-wrap-between uk-padding uk-margin-auto">
+    <div *ngFor="let i of files" class="uk-card uk-card-default uk-margin-bottom uk-margin-left uk-margin-right uk-width-medium">
+      <div class="uk-card-media-top">
+        <div class="uk-inline uk-visible-toggle">
+          <img src="thumbnail.png" alt="">
+          <div class="uk-hidden-hover uk-overlay-default uk-position-cover">
+            <div class="uk-overlay uk-padding-small uk-position-center">
+            <span uk-lightbox>
+              <a href="image.jpg" class="uk-margin-small-right" uk-icon="icon: expand; ratio: 1.5" data-caption="my_image.png"></a>
+            </span>
+              <a href="" class="uk-margin-small-right" uk-icon="icon: download; ratio: 1.5"></a>
+              <a href="" uk-icon="icon: trash; ratio: 1.5"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-margin-top uk-margin-left uk-margin-right">
+        <div class="uk-align-left uk-margin-bottom uk-margin-remove-right">
+          <span><span class="uk-margin-small-right" uk-icon="icon: image"></span>my_image.png</span>
+        </div>
+        <div class="uk-align-right uk-margin-remove-vertical">
+          <span>64KB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

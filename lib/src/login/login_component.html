@@ -1,0 +1,20 @@
+<div class="uk-flex uk-inline uk-height-1-1">
+  <div class="uk-position-center">
+    <div class="uk-text-center">
+      <h1 class="uk-heading-small">Free storage.<br>At Discord's expense.</h1>
+    </div>
+    <div class="uk-card uk-card-default uk-card-body">
+      <div class="uk-flex">
+        <div class="uk-margin-small-right">
+          <input class="uk-input" type="text" placeholder="Username" (input)="username = $event.target.value">
+        </div>
+        <div class="uk-margin-small-left">
+          <input class="uk-input" type="password" placeholder="Password" (input)="password = $event.target.value">
+        </div>
+      </div>
+      <div class="uk-flex uk-flex-center uk-margin-top">
+        <button class="uk-button uk-button-primary" (click)="continueCreds()">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>

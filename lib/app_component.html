@@ -1,0 +1,26 @@
+<div *ngIf="showNav" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle" href="#" uk-toggle="target: #mobile-nav">
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left"></span> <!-- Show on mobile, toggle mobile lav -->
+            </a>
+        </div>
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="#">Discord File Storage</a>
+        </div>
+    </nav>
+</div>
+
+<div id="mobile-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class="uk-active"><a href="#"><span class="uk-margin-small-right" uk-icon="icon: file-text"></span> Files</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: code"></span> Debug Info</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: settings"></span> Settings</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Log Out</a></li>
+        </ul>
+    </div>
+</div>
+
+<router-outlet [routes]="Routes.all"></router-outlet>

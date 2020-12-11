@@ -1,0 +1,9 @@
+$width: 340px;
+
+@for $i from 1 through 10 {
+  @media (min-width: $width * $i) {
+    .file-inner {
+      width: $width * $i;
+    }
+  }
+}

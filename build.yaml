@@ -1,0 +1,6 @@
+targets:
+  $default:
+    builders:
+      sass_builder|sass_builder:
+        enabled: True
+        generate_for: ["web/styles.scss", "lib/**.scss", "lib/src/files/files_component.scss"]
