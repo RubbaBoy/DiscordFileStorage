@@ -11,6 +11,7 @@ dependencies:
   angular_components: ^1.0.2
   angular_router: ^2.0.0
   js: ^0.6.2
+  filesize: ^1.0.4
 
 dev_dependencies:
   angular_test: ^2.3.0
