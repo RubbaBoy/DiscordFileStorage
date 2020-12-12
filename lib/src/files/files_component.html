@@ -1,5 +1,19 @@
-<div>
+<div *ngIf="uploadHovering" class="uk-overlay-primary uk-position-cover file-upload-overlay">
+  <div class="uk-position-center">
+    <span uk-icon="icon: upload; ratio: 2.5"></span>
+  </div>
+</div>
+
+<form id="drop-area" #form enctype="multipart/form-data">
+  <input #upload type="file" id="fileElem" name="filee">
+
   <div class="file-inner uk-flex uk-flex-wrap uk-flex-wrap-between uk-padding uk-margin-auto">
+    <div class="uk-card uk-inline uk-margin-bottom uk-margin-left uk-margin-right uk-width-medium">
+      <div class="uk-inline uk-position-cover uk-placeholder uk-margin-remove-bottom border-thicker" (click)="uploadFile()">
+        <span uk-icon="icon: upload; ratio: 1.5" class="uk-position-center upload-icon"></span>
+      </div>
+    </div>
+
     <div *ngFor="let file of files" class="uk-card uk-card-default uk-margin-bottom uk-margin-left uk-margin-right uk-width-medium">
       <div class="uk-card-media-top">
         <div class="uk-inline uk-visible-toggle">
@@ -25,4 +39,4 @@
       </div>
     </div>
   </div>
-</div>
+</form>

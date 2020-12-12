@@ -13,11 +13,7 @@ class AuthService {
     _cookieManager['username'] = value;
   }
 
-  String get password {
-    var bruh = _password ?? _cookieManager['password'];
-    print('retting pass $bruh (vookie ver is ${_cookieManager['password']})');
-    return bruh;
-  }
+  String get password => _password ?? _cookieManager['password'];
   set password(value) {
     _password = value;
     _cookieManager['password'] = value;

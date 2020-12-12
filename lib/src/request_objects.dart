@@ -1,4 +1,4 @@
-class File {
+class FetchedFile {
   final String id;
   final String name;
   final String mime;
@@ -7,9 +7,9 @@ class File {
   final String thumbnail; // Thumbnail URL
   final String preview; // Full sized preview URL
 
-  File(this.id, this.name, this.mime, this.size, this.pieces, this.thumbnail, this.preview);
+  FetchedFile(this.id, this.name, this.mime, this.size, this.pieces, this.thumbnail, this.preview);
 
-  File.fromJSON(Map<String, dynamic> json)
+  FetchedFile.fromJson(Map<String, dynamic> json)
       : id = json['id'],
         name = json['name'],
         mime = json['mime'],
